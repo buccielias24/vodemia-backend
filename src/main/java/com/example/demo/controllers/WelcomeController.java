@@ -19,6 +19,12 @@ public class WelcomeController {
 
     @GetMapping()
     public String welcome() {
-        return "WELCOME USER";
+        return "WELCOME ALL";
+    }
+    
+    @RequestMapping("/users")
+    @GetMapping()
+    public String welcomeUser(){
+        return "Welcome User";
     }
 }
